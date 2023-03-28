@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 }
-#hr{
+hr{
     color: aliceblue;
     width:40%;
     height: 0;
@@ -85,7 +85,7 @@ nav{
     font-weight: 350;
     text-transform: uppercase;
   }
-hr{
+#hr{
     margin-left: 2rem;
     margin-top: 2rem;
     width: 50%;
