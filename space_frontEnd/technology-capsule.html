@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="technology.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <label id="logo"> <img src="assets/shared/logo.svg" alt="logo">
+      </label>
+      <input type="checkbox" id="check" >
+     <label for="check" class="checkbutton">
+      <i class="fas fa-bars"></i>
+    </label>
+      <hr>
+      <ul>
+        <li> 00 <a class="active" href="index.html"> Home</a></li>
+        <li>01 <a href="destination-europa.html">Destination</a></li>
+        <li>02 <a href="crew-pilot.html">Crew</a></li>
+        <li>03 <a href="technology-capsule.html">Technology</a></li>
+      </ul>
+    </nav><!--nav-here-->
+   <div class="content"> <!--this div contain all the content of page-->
+  <p id="sub" > <span id="number">01</span>  <span id="meet">  Pick your destination   </span>
+
+
+  <!--content starts here-->
+  <div class="content1">
+
+      <!--tab starts here-->
+    <div class="nav">
+      <div class="tab active" onclick="changetab('tab1')">1</div>
+      <div class="tab" onclick="changetab('tab2')">2</div>
+      <div class="tab" onclick="changetab('tab3')">3</div>
+    </div>  <!--tab ends here-->
+
+    <!--tab-content starts here-->
+    <!--tab1-->
+    <div id="tab1" class="tab_content active">
+
+      <!--left div only contain text part starts here-->
+      <div class="left">
+        <span id="span1">THE TERMINOLOGY...</span>
+        <h4 id="hd1"></h4>
+        <p id="p1"></p>
+      </div>
+      <div class="right">
+        <img id="capsule" src="" alt="">
+      </div>
+    </div>
+    
+     <!--tab2-->
+     <div id="tab2" class="tab_content">
+
+      <!--left div only contain text part starts here-->
+      <div class="left">
+        <span id="span2"> THE TERMINOLOGY...</span>
+        <h4 id="hd2"></h4>
+        <p id="p2"></p>
+      </div>
+      <div class="right">
+        <img id="spaceport" src="" alt="">
+      </div>
+    </div>
+    
+     <!--tab3-->
+     <div id="tab3" class="tab_content">
+
+      <!--left div only contain text part starts here-->
+      <div class="left">
+        <span id="span3">THE TERMINOLOGY...</span>
+        <h4 id="hd3"></h4>
+        <p id="p3"></p>
+      </div>
+      <div class="right">
+        <img id="vehicle" src="" alt="">
+      </div>
+    </div><!--tab-content end here-->
+
+
+
+  </div>  <!--content div end here-->
+</div>  <!--main div end here-->
+
+
+ <script src="technology.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href= "destination.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>  
+  <!--commnon code for all page-->
+  <div class="main">
+    <nav>
+      <label id="logo"> <img src="assets/shared/logo.svg" alt="logo">
+      </label>
+      <input type="checkbox" id="check" >
+     <label for="check" class="checkbutton">
+      <i class="fas fa-bars"></i>
+    </label>
+      <hr>
+      <ul>
+        <li> 00 <a class="active" href="index.html"> Home</a></li>
+        <li>01 <a href="destination-europa.html">Destination</a></li>
+        <li>02 <a href="crew-pilot.html">Crew</a></li>
+        <li>03 <a href="technology-capsule.html">Technology</a></li>
+      </ul>
+    </nav><!--nav-here-->
+    <div class="content"> <!--this div contain all the content of page-->
+      <p id="sub" > <span id="number">01</span>  <span id="meet">  Pick your destination   </span>
+
+        <div id="nav"><!--this div contain alll tab menu of planet-->
+          <div class="tab active" onclick="changetab('moon')">MOON</div>
+          <div class="tab" onclick="changetab('mars')">MARS</div>
+          <div class="tab" onclick="changetab('europa')">EUROPA</div>
+          <div class="tab" onclick="changetab('titan')">TITAN</div>
+        </div><!--nav div end here-->
+       
+        <!--tab_content details with image and content-->
+        <div id="moon" class="tab_content active">
+          <div class="left">              
+            <img   class="planet"  id="moon1" src="" alt="planet_image">             
+          </div>
+          <div class="right"> 
+            <h4 id="Hd1"></h4>
+          <P id="p1"></P>
+          <hr>
+          <div class="planet_details">
+            <div class="planet_left">
+              <span id="avg1">AVG. DISTANCE</span>
+              <p id="distance1"></p>
+            </div>
+            <div class="planet_right">
+              <span id="time1">EST. TRAVEL TIME</span>
+              <p id="travel1"></p>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+        <div id="mars" class="tab_content">
+          <div class="left">
+          <img   class="planet" id="mars1" src="" alt="planet_image">
+          </div>
+          <div class="right">            
+          <h4 id="Hd2"></h4>
+          <P id="p2"></P>
+          <hr>
+          <div class="planet_details">
+            <div class="planet_left">
+              <span id="avg2">AVG. DISTANCE</span>
+              <p id="distance2"></p>
+            </div>
+            <div class="planet_right">
+              <span id="time2">EST. TRAVEL TIME</span>
+              <p id="travel2"></p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id="europa" class="tab_content">
+          <div class="left">
+            <img   class="planet active" id="europa1" src="" alt="planet_image">
+           </div>
+           <div class="right">            
+          <h4 id="Hd3"></h4>
+          <P id="p3"></P>
+          <hr>
+          <div class="planet_details">
+            <div class="planet_left">
+              <span id="avg3">AVG. DISTANCE</span>
+              <p id="distance3"></p>
+            </div>
+            <div class="planet_right">
+              <span id="time3">EST. TRAVEL TIME</span>
+              <p id="travel3"></p>
+            </div>
+          </div>
+           </div>
+        </div>
+        <div id="titan" class="tab_content">
+          <div class="left">
+          <img   class="planet" id="titan1" src="" alt="planet_image">
+          </div>
+          <div class="right">
+            <h4 id="Hd4"></h4>
+            <P id="p4"></P>
+            <hr>
+            <div class="planet_details">
+              <div class="planet_left4">
+                <span id="avg4">AVG. DISTANCE</span>
+                <p id="distance4"></p>
+              </div>
+              <div class="planet_right">
+                <span id="time4">EST. TRAVEL TIME</span>
+                <p id="travel4"></p>
+              </div>
+            </div>
+          </div>         
+        </div>
+       <!--tab_content-->
+
+
+
+
+      
+
+
+    </div><!--content div end here-->
+  </div> <!--main div end here-->
+
+   <script src="destination.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="crew-pilot.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <label id="logo"> <img src="assets/shared/logo.svg" alt="logo">
+      </label>
+      <input type="checkbox" id="check" >
+     <label for="check" class="checkbutton">
+      <i class="fas fa-bars"></i>
+    </label>
+      <hr>
+      <ul>
+        <li> 00 <a class="active" href="index.html"> Home</a></li>
+        <li>01 <a href="destination-europa.html">Destination</a></li>
+        <li>02 <a href="crew-pilot.html">Crew</a></li>
+        <li>03 <a href="technology-capsule.html">Technology</a></li>
+      </ul>
+    </nav>
+    <p id="sub" > <span id="number">02</span>  <span id="meet"> Meet your crew </span>  </p>
+    
+    <div id="slide1" class="slider active">
+      <p id="crew1" class="p"></p>
+      <h2 id="crew-name1" class="h2"></h2>
+      <p id="crew-details1" class="p2"></p>
+      <img id="c_image" src="" alt="crew-image">
+   </div>
+   <div id="slide2" class="slider">
+    <p id="crew-role2" class="p"></p>
+    <h2 id="crew-name2" class="h2"></h2>
+    <p id="crew-details2" class="p2"></p>
+    <img id="c_image2" src="" alt="crew-image">
+
+   </div>
+   <div id="slide3" class="slider">
+    <p id="crew-role3" class="p"></p>
+    <h2 id="crew-name3" class="h2"></h2>
+    <p id="crew-details3" class="p2"></p>
+    <img id="c_image3" src="" alt="crew-image">
+
+   </div>
+   <div id="slide4" class="slider">
+    <p id="crew-role4" class="p"></p>
+    <h2 id="crew-name4" class="h2"></h2>
+    <p id="crew-details4" class="p2"></p>
+    <img id="c_image4" src="" alt="crew-image">
+
+   </div>
+   <div class="buttons">   
+    <div id="c-1 " class="btn active" onclick="changetab('slide1')"></div>
+    <div id="c-2" class="btn" onclick="changetab('slide2')"></div>
+    <div id="c-3" class="btn" onclick="changetab('slide3')"></div>
+    <div id="c-4" class="btn" onclick="changetab('slide4')"></div>
+   </div>
+</div>
+  <script src="crew.js">  </script>
+
+  
+</body>
+</html>

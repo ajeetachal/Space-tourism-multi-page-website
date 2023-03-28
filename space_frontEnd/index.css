@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(assets/home/background-home-desktop.jpg);
+    font-family: MondiaThin; 
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 0;
+    margin: 0;    
+}
+hr{ color: aliceblue;
+    width:40%;
+    height: 0;
+    margin-top: 1.5rem;
+    opacity: 0.3;
+}
+.main{
+    display: grid;
+
+}
+nav{
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#logo{
+    width: fit-content;
+}
+
+.content{
+    margin-top: 10%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+#left{
+    padding: 5px;
+    justify-content: space-between;
+    width: 35%;
+}
+#right{
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    translate: (-50%, -50%);
+}
+#sub{
+    margin-top: 2rem;
+   font-family: 'Barlow Condensed',sans-serif;
+   letter-spacing: 5px;
+   word-spacing: 3px;
+   font-weight: 500;
+   font-size: 19px;
+   opacity: 0.7;
+}
+#h3{
+    margin-top: 1.5rem;
+    letter-spacing: 1rem;
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-family: Bellefair ;
+}
+#Explore{
+    margin-top: 4rem;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family: Bellefair ;
+ }
+ #details{
+  font-family: 'Barlow Condensed'; 
+  font-size: 16px;
+  font-weight: 40;
+  width: 1rem;
+  line-height: 1.5rem;
+  word-spacing: 3px;
+}  
+/* mobile navigation*/
+nav{
+    height: 70px;
+    width: 100%;
+  }
+  label.logo{
+    width: fit-content; 
+  }
+   
+  nav ul{
+    background: rgba(255,255,255,0.);
+    backdrop-filter: blur(10px);
+    float: right;
+    width: auto;
+    font-weight: 400;
+  }
+  
+  nav ul li{
+    font-family: 'Barlow Condensed';
+    display: inline-block;
+    line-height: 70px;
+    opacity: 0.;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 9px 3px;
+    border-radius: 3px;  
+    text-decoration: none;
+    margin-right: 5rem;
+    text-transform: uppercase;
+    }
+  a.active, a:hover{
+    border-bottom: #fff solid 0.5px;
+    /*border-bottom: #fff solid  0.5px ;  */
+    transition: .5s;  
+  }
+  .checkbutton{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+ /*------tablet------screen-----------------------------------------*/ 
+  @media (max-width: 952px){
+    body{
+      background-image: url(assets/home/background-home-tablet.jpg);
+    }
+      .content{
+      margin-top: 2%;
+      display: grid;
+      box-sizing: border-box;
+      padding: 0rem;
+      margin-left: 20%;
+      justify-content: space-between;
+  }
+  #left{
+      padding: 5px;
+      justify-content: space-between;
+      width: 85%;
+      text-align: center;
+  }
+  #right{
+      width: 45%;
+      top: 50%;
+      left: 50%;
+      translate: (-50%, -50%);
+  }
+  #Explore{
+      margin-top: 3rem;
+      margin-left: 4rem;
+   }
+    
+     
+    /*nav-menu*/
+    #logo{
+        margin-left: 10px;
+    }
+    .checkbutton{
+        display: none;
+      }
+    hr{
+      display: none;
+    }
+    label.logo{
+      padding-left: 10px;
+    }
+    nav ul li a{
+      font-size: 14px;
+    }
+    nav{      
+      display: flex;      
+  }
+    nav ul{
+      padding: 0rem 1rem;
+      background: #0a1929;
+      width: 30rem;
+      justify-content: center;
+      font-weight: 400;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      padding: 9px 3px;
+      border-radius: 3px;  
+      text-decoration: none;
+      margin-right: 2rem;
+      text-transform: uppercase;
+      }
+  }
+  /*----------mobile view with screen 650px------*/
+  @media (max-width: 650px){
+
+    body{
+      background-image: url(assets/home/background-home-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+    img{
+      margin-left: -5rem;
+    }
+    #sub{
+      margin-left: 2px;
+      font-size: 1rem;
+    }
+    .content{
+      margin-top: 2%;
+      display: grid;
+      margin-left: 15%;
+      justify-content: space-between;
+  }
+  #left{
+      justify-content: space-between;
+      width: 75%;
+      text-align: center;
+  }
+  #h3{
+    font-size: 6rem;
+  }
+  #right{
+      width: 45%;
+      top: 50%;
+      left: 50%;
+      translate: (-50%, -50%);
+  }
+  #Explore{
+      margin-top: 3rem;
+      margin-left: 4rem;
+    }
+    .checkbutton{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+    }
+    nav ul li{
+      display: block;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover, a.active{
+    background: none;
+  }
+  #check:checked~ul{
+    left: 0;
+  }
+  }
