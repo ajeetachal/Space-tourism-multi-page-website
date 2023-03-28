@@ -343,7 +343,7 @@ span{
               height: 30rem;
               width: 80%;
           }
-    }
+          
     ul{
       position: fixed;
       width: 100%;
@@ -366,3 +366,4 @@ span{
     left: 0;
   }
   
+    }
