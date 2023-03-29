@@ -25,6 +25,7 @@ hr{ color: aliceblue;
 
 }
 nav{
+    margin-top: 2rem;
     padding: 1rem 1rem;
     display: flex;
     justify-content: space-around;
@@ -35,7 +36,7 @@ nav{
 }
 
 .content{
-    margin-top: 10%;
+    margin-top: 15%;
     display: flex;
     box-sizing: border-box;
     padding: 2rem;
@@ -45,32 +46,32 @@ nav{
 #left{
     padding: 5px;
     justify-content: space-between;
-    width: 35%;
+    width: 40%;
 }
 #right{
     width: 45%;
     top: 50%;
-    left: 50%;
+    left: 40%;
     translate: (-50%, -50%);
 }
 #sub{
-    margin-top: 2rem;
+    margin-top: 4rem;
    font-family: 'Barlow Condensed',sans-serif;
    letter-spacing: 5px;
    word-spacing: 3px;
    font-weight: 500;
-   font-size: 19px;
+   font-size: 21px;
    opacity: 0.7;
 }
 #h3{
     margin-top: 1.5rem;
     letter-spacing: 1rem;
-    font-size: 7rem;
+    font-size: 8rem;
     text-transform: uppercase;
     font-family: Bellefair ;
 }
 #Explore{
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: 10rem;
     display: flex;
     justify-content: center;
@@ -87,9 +88,9 @@ nav{
  }
  #details{
   font-family: 'Barlow Condensed'; 
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 40;
-  width: 1rem;
+  width: 0.8rem;
   line-height: 1.5rem;
   word-spacing: 3px;
 }  
@@ -103,18 +104,21 @@ nav{
   }
    
   nav ul{
-    background: rgba(255,255,255,0.);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    float: right;
+    float: right;   
+    padding-left: 1rem;
     width: auto;
     font-weight: 400;
   }
   
   nav ul li{
+    font-size: 18px;
+    font-weight: 700;
     font-family: 'Barlow Condensed';
     display: inline-block;
-    line-height: 70px;
-    opacity: 0.;
+    line-height: 60px;
+   
   }
   nav ul li a{
     color: white;
@@ -122,8 +126,9 @@ nav{
     padding: 9px 3px;
     border-radius: 3px;  
     text-decoration: none;
-    margin-right: 5rem;
+    margin-right: 4rem;
     text-transform: uppercase;
+    font-weight: 500;
     }
   a.active, a:hover{
     border-bottom: #fff solid 0.5px;
